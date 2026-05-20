@@ -28,7 +28,18 @@ This is the OYCA project mission, not the THG Media company mission.
 | Sue | Development, accessibility | `~/.claude/team/staff/sue.md` |
 | Jen | Narrative, copy | `~/.claude/team/staff/jen.md` |
 | Mandy | Data, analytics, metrics | `~/.claude/team/staff/mandy.md` |
-| Pam | Coordination | `~/.claude/team/staff/pam.md` |
+| Pam | Feels Director, coordination | `~/.claude/team/staff/pam.md` |
+| Martha | Feels review (secondary after Pam) | `~/.claude/team/staff/martha.md` |
+
+### Production Gate
+
+Nothing ships to production without Pam's approval. She reviews every page, every piece of copy, every design choice through the lens of "how would this make someone feel?" Martha is secondary approval after Pam, ensuring the site feels right to people who aren't technical.
+
+### Guiding Principle
+
+> Always put yourself in the person's shoes and ask: how would I feel when finding and reading this page?
+
+This is the northern star for every decision on this project.
 
 ---
 
