@@ -41,6 +41,27 @@ body {
   color: $mint;
 }
 
+// Site navigation
+.site-nav {
+  padding: 20px 0;
+
+  .wrap {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.nav-link {
+  color: $bone-dim;
+  text-decoration: none;
+  transition: color .2s;
+
+  &:hover {
+    color: $amber;
+  }
+}
+
 // Animations
 @keyframes rise {
   from { opacity: 0; transform: translateY(24px); }
