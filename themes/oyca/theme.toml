@@ -1,0 +1,8 @@
+name = "OYCA"
+license = "MIT"
+licenselink = "https://github.com/youruser/oyca/blob/main/LICENSE"
+description = "Custom theme for Own Your Computer Again"
+min_version = "0.155.2"
+
+[author]
+  name = "THG Media"

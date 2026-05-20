@@ -1,0 +1,50 @@
+// Moment band
+.band {
+  border-top: 1px solid $line;
+  border-bottom: 1px solid $line;
+  background: linear-gradient(180deg, rgba(242, 163, 60, .06), transparent);
+  padding: 72px 0;
+
+  h2 {
+    font-family: $font-heading;
+    font-weight: 500;
+    font-size: clamp(1.7rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    max-width: 880px;
+  }
+
+  p {
+    margin-top: 22px;
+    max-width: 620px;
+    color: $bone-dim;
+    font-size: 1.08rem;
+  }
+}
+
+// Section shell
+section {
+  padding: 96px 0;
+}
+
+.sec-label {
+  color: $amber;
+  margin-bottom: 18px;
+}
+
+.sec-title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.04;
+  letter-spacing: -.015em;
+  max-width: 780px;
+  margin-bottom: 14px;
+}
+
+.sec-sub {
+  color: $bone-dim;
+  max-width: 560px;
+  font-size: 1.05rem;
+  margin-bottom: 52px;
+}

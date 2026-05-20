@@ -1,0 +1,31 @@
+baseURL = 'https://ownyourcomputeragain.org/'
+languageCode = 'en-us'
+title = 'Own Your Computer Again'
+theme = 'oyca'
+
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 40
+
+[frontmatter]
+  lastmod = ['last_updated', ':fileModTime']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
+  author = "THG Media"
+  mission = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1

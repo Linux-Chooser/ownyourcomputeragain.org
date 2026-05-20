@@ -1,0 +1,7 @@
+<header class="site-nav">
+  <div class="wrap">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="mono" style="color:var(--bone-dim);text-decoration:none;font-size:.72rem;letter-spacing:.18em;">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</header>

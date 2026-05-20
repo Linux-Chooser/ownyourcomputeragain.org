@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="content-page">
+  <div class="wrap">
+    <p class="sec-label mono">{{ with .Params.category }}// {{ . }}{{ end }}</p>
+    <h1 class="sec-title serif">{{ .Title }}</h1>
+    {{ with .Description }}<p class="sec-sub">{{ . }}</p>{{ end }}
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

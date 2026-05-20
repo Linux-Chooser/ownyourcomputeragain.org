@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section>
+  <div class="wrap">
+    <p class="sec-label mono">// {{ .Title }}</p>
+    <h1 class="sec-title serif">{{ .Title }}</h1>
+    {{ with .Description }}<p class="sec-sub">{{ . }}</p>{{ end }}
+    <div class="tribes">
+      {{ range .Pages }}
+      <div class="tribe">
+        <div class="glow"></div>
+        <h3><a href="{{ .RelPermalink }}" style="color:inherit;text-decoration:none;">{{ .Title }}</a></h3>
+        <p>{{ .Summary }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

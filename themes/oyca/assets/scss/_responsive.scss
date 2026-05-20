@@ -1,0 +1,32 @@
+@media (max-width: 860px) {
+  .free-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tribes {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 24px;
+  }
+
+  .flavors {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .free-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flavors {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 72px 0;
+  }
+}
