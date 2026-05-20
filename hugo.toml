@@ -19,6 +19,7 @@ summaryLength = 40
   description = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
   author = "THG Media"
   mission = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
+  goatcounter = "oyca"
 
 [taxonomies]
   tag = "tags"

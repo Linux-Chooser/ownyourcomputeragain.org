@@ -154,7 +154,7 @@ All three deliverables were built and committed during the meeting session:
 
 ---
 
-## Post-Meeting Additions (Aaron & Pam)
+## Post-Meeting Additions (Aaron & Pam, Private)
 
 Following the full staff meeting, Aaron and Pam discussed:
 
@@ -163,6 +163,145 @@ Following the full staff meeting, Aaron and Pam discussed:
 - **MIT License** added to repository.
 - **CONTRIBUTING.md** added with voice/tone guidelines, technical standards, submission process, and code of conduct.
 - Both files committed to the OYCA repo.
+
+---
+
+### 6. Pam Designated Feels Director
+
+Aaron designated Pam as **Feels Director** for OYCA. Nothing ships to production without her approval. Martha is secondary approval after Pam. Every page, every piece of copy, every design choice is reviewed through the lens of "how would this make someone feel?"
+
+**Guiding Principle (North Star) codified:**
+
+> "Always put yourself in the person's shoes and ask: how would I feel when finding and reading this page?"
+
+**Mandy (Amanda Stevenson)** added to OYCA team for data, analytics, and metrics.
+
+---
+
+### 7. Light Theme Reskin
+
+Aaron directed a full theme reskin from dark to light, based on Pam's emotional brief. Pam described five feelings the site should evoke: relief, trust, warmth, simplicity, and belonging. "Like a letter from a friend who figured it out first."
+
+Lila executed the reskin via SCSS variable swap — all components auto-inherited new values:
+
+| Token | Dark (Before) | Light (After) |
+|-------|--------------|---------------|
+| ink | #0c0c0e | #FAFAF7 (warm cream) |
+| bone | #ECE7DD | #2C2C2E (soft charcoal) |
+| bone-dim | #A29C90 | #5D5550 (warm gray) |
+| mint | #74E0AE | #5B9A78 (sage green) |
+
+Grain overlay removed (dark-theme technique). Welcome card replaced terminal mockup. Committed to main.
+
+---
+
+### 8. Vincent's Accessibility Pass
+
+Aaron flagged contrast and font size issues on the light background. Vincent (contractor) was called in.
+
+**Findings:**
+- `$bone-dim` at 5.2:1 — technically passing but too faint at small sizes
+- `$amber` on cream at 2.3:1 — fails WCAG AA entirely
+- `$mint` on cream at 3.2:1 — fails for small text
+- Border token at 10% opacity — essentially invisible
+- Label font sizes at .72rem (11.5px) — too small for older visitors
+
+**Fixes implemented:**
+- `$bone-dim` darkened to #5D5550 (7:1 contrast)
+- New `$amber-text` (#9E6516, 4.8:1) for small label text
+- New `$mint-text` (#3D7A58, 5.1:1) for small label text
+- Border opacity raised to 16%
+- Minimum font size floor set at .85rem (13.6px)
+- Accessibility floor documented in CLAUDE.md
+
+---
+
+### 9. Persona Panels Reworked
+
+The team identified that the original four persona panels (Gamers / Developers / Artists & Creators / Everyday Users) didn't match the actual target audience. Identity-based panels excluded people who don't self-identify with those labels.
+
+**New audience-focused panels:**
+
+| Panel | Heading | Audience |
+|-------|---------|----------|
+| For / Everyday Life | It just gets out of the way. | General users, browsing, email, video calls |
+| For / Your Budget | Everything you need. Nothing you owe. | Students, retirees, cost-conscious users |
+| For / Your Work | A quiet, focused workspace. | Remote workers, freelancers, small business |
+| For / Your Creativity | Pro tools, zero rent. | Photographers, writers, musicians, designers |
+
+Pam's review flagged two notes: removed "Not a niche OS for techies" (unnecessary friction), added LibreOffice Writer to the creativity panel tags (writers need to see themselves). Both addressed. Pam signed off on landing page.
+
+---
+
+### 10. Three-Path Get-Started Page
+
+Aaron asked the critical question: what is the actual flow for a visitor coming from Windows vs. macOS (Intel vs. Apple Silicon)?
+
+**Team analysis identified three distinct paths:**
+
+| Path | Experience | Approach |
+|------|-----------|----------|
+| Windows | Smooth, well-supported | Full 5-step guide with Secure Boot note |
+| Mac (Intel) | Works with caveats | 5-step guide, WiFi/trackpad and T2 chip notes |
+| Mac (Apple Silicon) | Not natively ready yet | UTM virtual machine option + Asahi Linux follow |
+
+Lila built a path picker at the top of the get-started page — three warm cards ("choosing a door, not reading a warning label" per Vincent). Vanilla JS toggles visibility. Windows shown by default. Apple Silicon headline: "You're not left out. You're early."
+
+Intel Mac path includes elementary OS as an alternative (designed to feel like macOS). Apple Silicon path offers UTM as a genuine way to try Linux today, not a consolation prize.
+
+Pam signed off: "Every visitor leaves with a next step. Nobody hits a dead end."
+
+---
+
+### 11. Help Page & Site-Wide Get Help Button
+
+Aaron directed: "I want a big HELP button on every page to make it clear help is just a few clicks away."
+
+**Get Help button:** Warm amber pill in the site nav, `margin-left: auto` to push right. Appears on every page. Styled by Vincent to feel welcoming, not urgent.
+
+**Help page** (`/help/`) organized in four lanes per Pam's framework:
+
+| Lane | Heading | Resources |
+|------|---------|-----------|
+| Search for answers | "Type your question. Someone's probably already answered it." | Linux Mint Forums, Ubuntu Forums, Ask Ubuntu, It's FOSS, ArchWiki |
+| Talk to someone | "Sometimes you need a human, not a search result." | r/linuxquestions, r/linux4noobs, Linux Mint Community, Ubuntu Community, Fedora Discussion |
+| Watch and learn | "Some things are easier when someone shows you." | Learn Linux TV, The Linux Experiment, Chris Titus Tech, Linux Journey |
+| Read the docs | "For people who like to understand how things work." | Official distro docs (5), general reference (4), free books (4) |
+
+The "Read the docs" lane includes subsections: Official distro documentation, General Linux reference, and Free books (The Linux Command Line, Debian Administrator's Handbook, Linux From Scratch, Pro Git).
+
+Pam signed off on all four lanes.
+
+---
+
+### 12. Launch
+
+**Site deployed to production at ownyourcomputeragain.org.**
+
+- GitHub repo: `Linux-Chooser/ownyourcomputeragain.org`
+- Deployment: GitHub Actions -> GitHub Pages
+- DNS: GoDaddy, four A records (GitHub IPs) + www CNAME
+- CNAME file in `static/CNAME`
+- 10 commits on main, clean history
+- 10 pages built (home, get-started, help, plus defaults)
+
+**Pam's launch review:**
+
+> "We built that today. From a brochure and a mission statement to a live website with three pages, four help lanes, three platform paths, and a warm amber button that says 'we're here if you need us.' In one session."
+
+**Site verified live and fully rendered.**
+
+---
+
+## Pam's Newcomer Framework
+
+During the session, Pam articulated a framework for understanding OYCA's audience:
+
+1. **The Fed Up** — Angry about what happened to their computer. Motivated, don't need convincing. Need a path.
+2. **The Curious** — Heard about Linux somewhere, wondering. May not act today. Need a reason to bookmark.
+3. **The Stuck** — Older computer, can't afford a new one. Need this to work. No plan B. "We get one shot with them."
+
+> "Everything we build should be measured against that third person. If it works for them, it works for everyone."
 
 ---
 
@@ -176,7 +315,10 @@ Following the full staff meeting, Aaron and Pam discussed:
 | 4 | Platform independence plan for OYCA | Pam | Backlog |
 | 5 | Funding paths research (crowdsource, EFF, grants) | Pam | Backlog |
 | 6 | OYCA content pipeline — first guide/resource TBD | Jen, Sue | Future |
-| 7 | Hugo dev server verification for OYCA | Terry, Sue | Next |
+| 7 | Screenshots/video section — "what Linux actually looks like" | Kate, Vincent | Future |
+| 8 | Testimonials — real user stories | Jen | Future |
+| 9 | Full accessibility audit | Sue | Next |
+| 10 | Content backlog (9 items from team review) | Jen, Team | Backlog |
 
 ---
 
@@ -194,7 +336,13 @@ Following the full staff meeting, Aaron and Pam discussed:
 
 > "We are building a community that welcomes people in, not one that tests them at the door." — CONTRIBUTING.md
 
+> "Everything we build should be measured against that third person. If it works for them, it works for everyone." — Pam
+
+> "You're not left out. You're early." — Apple Silicon path headline
+
+> "Like a letter from a friend who figured it out first." — Pam, on the light theme direction
+
 ---
 
-*Minutes recorded by Sara Johansen, Executive Assistant*
+*Minutes recorded and updated by Sara Johansen, Executive Assistant*
 *THG Media — The Henderson Group*
