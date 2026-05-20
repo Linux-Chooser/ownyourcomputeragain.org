@@ -1,18 +1,27 @@
-// OYCA Color Palette
-$ink: #0c0c0e;
-$ink-2: #141417;
-$bone: #ECE7DD;
-$bone-dim: #A29C90;
-$amber: #F2A33C;
-$amber-deep: #d7821a;
-$mint: #74E0AE;
-$line: rgba(236, 231, 221, .12);
+// OYCA Color Palette — Light Theme
+// Warm, welcoming, like a letter from a friend
 
-// Typography
+// Backgrounds
+$ink: #FAFAF7;              // Primary background (warm cream white)
+$ink-2: #F3F0EA;            // Card/section backgrounds (warm stone)
+
+// Text
+$bone: #2C2C2E;             // Primary text (soft charcoal)
+$bone-dim: #6B6966;         // Secondary text (warm gray)
+
+// Accents
+$amber: #E8943A;            // Primary accent (warm amber)
+$amber-deep: #C47A1E;       // Hover accent
+$mint: #5B9A78;             // Secondary accent (sage green, replaces electric mint)
+
+// Structure
+$line: rgba(44, 44, 46, .10); // Borders
+
+// Typography — unchanged
 $font-body: 'Hanken Grotesk', sans-serif;
 $font-heading: 'Fraunces', serif;
 $font-mono: 'JetBrains Mono', monospace;
 
-// Layout
+// Layout — unchanged
 $max-width: 1080px;
 $padding: 28px;

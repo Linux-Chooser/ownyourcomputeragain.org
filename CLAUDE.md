@@ -55,17 +55,17 @@ This is the northern star for every decision on this project.
 
 ## Design System
 
-**Palette:**
+**Palette (Light Theme):**
 | Token | Hex | Usage |
 |-------|-----|-------|
-| ink | #0c0c0e | Background |
-| ink-2 | #141417 | Card/section backgrounds |
-| bone | #ECE7DD | Primary text |
-| bone-dim | #A29C90 | Secondary text |
-| amber | #F2A33C | Primary accent |
-| amber-deep | #d7821a | Hover/deep accent |
-| mint | #74E0AE | Secondary accent |
-| line | rgba(236,231,221,.12) | Borders |
+| ink | #FAFAF7 | Background (warm cream) |
+| ink-2 | #F3F0EA | Card/section backgrounds (warm stone) |
+| bone | #2C2C2E | Primary text (soft charcoal) |
+| bone-dim | #6B6966 | Secondary text (warm gray) |
+| amber | #E8943A | Primary accent (warm amber) |
+| amber-deep | #C47A1E | Hover accent |
+| sage/mint | #5B9A78 | Secondary accent (sage green) |
+| line | rgba(44,44,46,.10) | Borders |
 
 **Typography:**
 - **Fraunces** (serif) -- Headlines, display text
