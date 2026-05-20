@@ -61,11 +61,15 @@ This is the northern star for every decision on this project.
 | ink | #FAFAF7 | Background (warm cream) |
 | ink-2 | #F3F0EA | Card/section backgrounds (warm stone) |
 | bone | #2C2C2E | Primary text (soft charcoal) |
-| bone-dim | #6B6966 | Secondary text (warm gray) |
-| amber | #E8943A | Primary accent (warm amber) |
+| bone-dim | #5D5550 | Secondary text (warm gray, 7:1 contrast) |
+| amber | #E8943A | Decorative accent (buttons, large headings, glows) |
+| amber-text | #9E6516 | Amber safe for small text (4.8:1 contrast) |
 | amber-deep | #C47A1E | Hover accent |
-| sage/mint | #5B9A78 | Secondary accent (sage green) |
-| line | rgba(44,44,46,.10) | Borders |
+| mint | #5B9A78 | Decorative accent (dots, glows) |
+| mint-text | #3D7A58 | Sage safe for small text (5.1:1 contrast) |
+| line | rgba(44,44,46,.16) | Borders (visible on light backgrounds) |
+
+**Accessibility Floor:** All text meets WCAG AA (4.5:1 minimum). Minimum font size .85rem (~13.6px) for labels.
 
 **Typography:**
 - **Fraunces** (serif) -- Headlines, display text

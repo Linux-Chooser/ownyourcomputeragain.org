@@ -21,8 +21,8 @@
 
   .no {
     font-family: $font-mono;
-    color: $amber;
-    font-size: .78rem;
+    color: $amber-text;
+    font-size: .85rem;
     letter-spacing: .1em;
   }
 
@@ -36,7 +36,7 @@
 
   p {
     color: $bone-dim;
-    font-size: .97rem;
+    font-size: 1rem;
   }
 }
 
@@ -65,9 +65,9 @@
 
   .num {
     font-family: $font-mono;
-    font-size: .74rem;
+    font-size: .85rem;
     color: $bone-dim;
-    letter-spacing: .18em;
+    letter-spacing: .14em;
   }
 
   h3 {
@@ -109,11 +109,11 @@
 
 .tag {
   font-family: $font-mono;
-  font-size: .72rem;
+  font-size: .82rem;
   color: $bone;
   border: 1px solid $line;
   border-radius: 100px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   background: rgba(44, 44, 46, .03);
 }
 
@@ -143,14 +143,14 @@
   .lab {
     margin-top: 12px;
     color: $bone-dim;
-    font-size: .95rem;
+    font-size: 1rem;
   }
 }
 
 .proof-note {
   margin-top: 48px;
   font-family: $font-mono;
-  font-size: .74rem;
+  font-size: .85rem;
   color: $bone-dim;
   letter-spacing: .04em;
   text-transform: none;
@@ -165,11 +165,14 @@
 }
 
 .flavor {
+  display: block;
   border: 1px solid $line;
   border-radius: 14px;
   padding: 26px 22px;
   transition: .35s;
   box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+  text-decoration: none;
+  color: $bone;
 
   &:hover {
     background: $ink-2;
@@ -179,8 +182,8 @@
 
   .step {
     font-family: $font-mono;
-    color: $mint;
-    font-size: .74rem;
+    color: $mint-text;
+    font-size: .85rem;
     letter-spacing: .1em;
   }
 
@@ -193,7 +196,7 @@
 
   p {
     color: $bone-dim;
-    font-size: .9rem;
+    font-size: .95rem;
   }
 }
 
@@ -258,9 +261,9 @@ footer {
   .sign {
     margin-top: 18px;
     font-family: $font-mono;
-    font-size: .74rem;
+    font-size: .85rem;
     color: $bone-dim;
-    letter-spacing: .12em;
+    letter-spacing: .1em;
   }
 }
 
@@ -321,8 +324,8 @@ footer {
   }
 
   .step-num {
-    font-size: .74rem;
-    letter-spacing: .12em;
+    font-size: .85rem;
+    letter-spacing: .1em;
   }
 
   h3 {
@@ -390,7 +393,7 @@ footer {
 
 .hero-pick-note {
   font-family: $font-mono;
-  font-size: .82rem;
+  font-size: .88rem;
   color: $bone-dim;
   letter-spacing: .04em;
   margin-bottom: 16px;
@@ -452,7 +455,7 @@ footer {
 }
 
 .welcome-home-link {
-  font-size: .82rem;
+  font-size: .88rem;
   color: $bone-dim;
   text-decoration: none;
   letter-spacing: .06em;
@@ -460,6 +463,140 @@ footer {
 
   &:hover {
     color: $amber;
+  }
+}
+
+// Path picker — "choosing a door, not reading a warning label"
+.path-picker-section {
+  padding-bottom: 0;
+
+  .sec-sub {
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+}
+
+.path-picker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.path-card {
+  appearance: none;
+  border: 2px solid $line;
+  border-radius: 18px;
+  padding: 34px 28px;
+  background: linear-gradient(180deg, $ink-2, $ink);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .35s, transform .35s, box-shadow .35s, background .35s;
+  font-family: $font-body;
+
+  &:hover {
+    border-color: rgba($amber, .4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+  }
+
+  &.active {
+    border-color: $amber;
+    background: linear-gradient(180deg, rgba($amber, .06), $ink);
+    box-shadow: 0 8px 28px rgba(232, 148, 58, .12);
+    transform: translateY(-2px);
+  }
+}
+
+.path-card-label {
+  font-size: .85rem;
+  color: $amber-text;
+  letter-spacing: .1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.path-card-title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  letter-spacing: -.01em;
+  color: $bone;
+}
+
+.path-card-desc {
+  color: $bone-dim;
+  font-size: .95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+// Path content — show/hide
+.path-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+// Note box — warm callout, not a warning
+.note-box {
+  border-left: 4px solid $amber;
+  background: $ink-2;
+  border-radius: 0 14px 14px 0;
+  padding: 28px 32px;
+  margin-top: 36px;
+
+  p {
+    color: $bone-dim;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+
+    strong {
+      color: $bone;
+    }
+  }
+
+  & + .note-box {
+    margin-top: 16px;
+  }
+}
+
+.note-box-wide {
+  text-align: center;
+  border-left: none;
+  border-top: 4px solid $amber;
+  border-radius: 0 0 14px 14px;
+  padding: 40px 36px;
+}
+
+// Two-column steps variant (Apple Silicon options)
+.steps-grid-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+// Hero pick dual-button layout
+.hero-pick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.btn-alt {
+  background: transparent;
+  color: $bone;
+  border: 2px solid $line;
+
+  &:hover {
+    background: $bone;
+    color: $ink;
+    border-color: $bone;
   }
 }
 
@@ -524,3 +661,80 @@ footer {
     }
   }
 }
+
+// ── Help page ───────────────────────────────────────────────────────
+.help-page {
+  padding: 96px 0 0;
+}
+
+.help-lane {
+  & + .help-lane {
+    margin-top: -48px;
+  }
+}
+
+.help-lane-sub {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $bone;
+  margin: 48px 0 20px;
+  letter-spacing: -.01em;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $line;
+  border-radius: 18px;
+  padding: 34px 30px;
+  background: linear-gradient(180deg, $ink-2, $ink);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+  text-decoration: none;
+  color: $bone;
+  transition: border-color .35s, transform .35s, box-shadow .35s;
+
+  &:hover {
+    border-color: rgba($amber, .4);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+  }
+}
+
+.help-card-name {
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+  letter-spacing: -.01em;
+}
+
+.help-card-desc {
+  color: $bone-dim;
+  font-size: .95rem;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+.help-card-link {
+  font-size: .85rem;
+  color: $amber-text;
+  letter-spacing: .08em;
+  transition: color .2s;
+
+  .help-card:hover & {
+    color: $amber;
+  }
+}
+
+// ── End Help page ───────────────────────────────────────────────────

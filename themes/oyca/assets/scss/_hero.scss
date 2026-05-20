@@ -46,10 +46,10 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: $amber;
-  border: 1px solid rgba(232, 148, 58, .30);
+  color: $amber-text;
+  border: 1px solid rgba(232, 148, 58, .35);
   border-radius: 100px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   margin-bottom: 34px;
   opacity: 0;
   animation: rise .8s .1s forwards;
@@ -130,9 +130,9 @@ h1 {
 }
 
 .welcome-card-link {
-  color: $amber;
+  color: $amber-text;
   text-decoration: none;
-  font-size: .82rem;
+  font-size: .88rem;
   &:hover { color: $amber-deep; }
 }
 

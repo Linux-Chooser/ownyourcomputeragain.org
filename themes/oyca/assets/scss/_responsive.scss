@@ -16,8 +16,20 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
   // Get Started responsive — 860px
   .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .path-picker {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -27,6 +39,15 @@
 
   .hero-pick {
     padding: 40px 28px;
+  }
+
+  .hero-pick-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note-box {
+    padding: 24px 24px;
   }
 }
 
@@ -43,8 +64,20 @@
     padding: 72px 0;
   }
 
+  .help-card {
+    padding: 26px 22px;
+  }
+
   // Get Started responsive — 520px
   .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .path-picker {
     grid-template-columns: 1fr;
   }
 
@@ -54,5 +87,17 @@
 
   .hero-pick {
     padding: 32px 20px;
+  }
+
+  .note-box {
+    padding: 20px 18px;
+  }
+
+  .note-box-wide {
+    padding: 28px 20px;
+  }
+
+  .path-card {
+    padding: 26px 22px;
   }
 }

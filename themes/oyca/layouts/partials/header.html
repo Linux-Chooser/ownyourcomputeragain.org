@@ -1,7 +1,11 @@
 <header class="site-nav">
   <div class="wrap">
     {{ range .Site.Menus.main }}
+      {{ if eq .URL "/help/" }}
+    <a href="{{ .URL }}" class="help-btn mono">{{ .Name }}</a>
+      {{ else }}
     <a href="{{ .URL }}" class="nav-link mono">{{ .Name }}</a>
+      {{ end }}
     {{ end }}
   </div>
 </header>

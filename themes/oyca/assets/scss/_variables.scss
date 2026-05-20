@@ -7,15 +7,17 @@ $ink-2: #F3F0EA;            // Card/section backgrounds (warm stone)
 
 // Text
 $bone: #2C2C2E;             // Primary text (soft charcoal)
-$bone-dim: #6B6966;         // Secondary text (warm gray)
+$bone-dim: #5D5550;         // Secondary text (warm gray, 7:1 on cream)
 
 // Accents
-$amber: #E8943A;            // Primary accent (warm amber)
+$amber: #E8943A;            // Primary accent — decorative, buttons, large headings
 $amber-deep: #C47A1E;       // Hover accent
-$mint: #5B9A78;             // Secondary accent (sage green, replaces electric mint)
+$amber-text: #9E6516;       // Amber safe for small text on cream (4.8:1)
+$mint: #5B9A78;             // Secondary accent — decorative, dots, glows
+$mint-text: #3D7A58;        // Sage safe for small text on cream (5.1:1)
 
 // Structure
-$line: rgba(44, 44, 46, .10); // Borders
+$line: rgba(44, 44, 46, .16); // Borders (visible on light backgrounds)
 
 // Typography — unchanged
 $font-body: 'Hanken Grotesk', sans-serif;

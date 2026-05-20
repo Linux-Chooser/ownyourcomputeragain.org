@@ -25,8 +25,8 @@ body {
 .mono {
   font-family: $font-mono;
   text-transform: uppercase;
-  letter-spacing: .18em;
-  font-size: .72rem;
+  letter-spacing: .14em;
+  font-size: .85rem;
 }
 
 .serif {
@@ -34,11 +34,11 @@ body {
 }
 
 .amber {
-  color: $amber;
+  color: $amber-text;
 }
 
 .mint {
-  color: $mint;
+  color: $mint-text;
 }
 
 // Site navigation
@@ -59,6 +59,23 @@ body {
 
   &:hover {
     color: $amber;
+  }
+}
+
+.help-btn {
+  margin-left: auto;
+  background: $amber;
+  color: #1a1206;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 100px;
+  transition: background .3s, color .3s, transform .3s, box-shadow .3s;
+
+  &:hover {
+    background: $amber-deep;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
   }
 }
 

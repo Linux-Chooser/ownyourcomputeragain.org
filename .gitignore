@@ -1,10 +1,25 @@
+# Hugo build output
 public/
 resources/
 .hugo_build.lock
+
+# OS metadata
 .DS_Store
-*.tmp
-*.bak
-*.orig
+Thumbs.db
+
+# Editor / IDE
 *.swp
 *.swo
 *~
+*.tmp
+*.bak
+*.orig
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+
+# Node (if tooling is added later)
+node_modules/

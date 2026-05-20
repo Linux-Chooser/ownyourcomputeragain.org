@@ -34,3 +34,8 @@ summaryLength = 40
     name = "Get Started"
     url = "/get-started/"
     weight = 2
+
+  [[menu.main]]
+    name = "Get Help"
+    url = "/help/"
+    weight = 10
