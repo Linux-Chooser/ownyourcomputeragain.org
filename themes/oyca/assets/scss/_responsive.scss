@@ -15,6 +15,19 @@
   .flavors {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  // Get Started responsive — 860px
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alt-picks {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-pick {
+    padding: 40px 28px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -28,5 +41,18 @@
 
   section {
     padding: 72px 0;
+  }
+
+  // Get Started responsive — 520px
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courage {
+    padding: 48px 0 40px;
+  }
+
+  .hero-pick {
+    padding: 32px 20px;
   }
 }
