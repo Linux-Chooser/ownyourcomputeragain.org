@@ -27,6 +27,7 @@ This is the OYCA project mission, not the THG Media company mission.
 | Terry | Development, QA | `~/.claude/team/staff/terry.md` |
 | Sue | Development, accessibility | `~/.claude/team/staff/sue.md` |
 | Jen | Narrative, copy | `~/.claude/team/staff/jen.md` |
+| Mandy | Data, analytics, metrics | `~/.claude/team/staff/mandy.md` |
 | Pam | Coordination | `~/.claude/team/staff/pam.md` |
 
 ---
