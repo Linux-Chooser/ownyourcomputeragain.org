@@ -103,12 +103,37 @@
           </div>
 
           <input type="hidden" name="_subject" value="OYCA Testimonial Submission">
-          <input type="hidden" name="_next" value="https://ownyourcomputeragain.org/thank-you/">
           <input type="text" name="_gotcha" style="display:none">
 
           <button type="submit" class="btn">Share Your Story &rarr;</button>
           <p class="tm-form-note mono">All submissions are reviewed before publishing. We never share your email.</p>
         </form>
+
+        <script>
+        document.querySelector('.tm-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          var form = this;
+          var btn = form.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.textContent = 'Sending…';
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          }).then(function(r) {
+            if (r.ok) window.location.href = '/thank-you/';
+            else {
+              btn.disabled = false;
+              btn.innerHTML = 'Share Your Story &rarr;';
+              alert('Something went wrong. Please try again.');
+            }
+          }).catch(function() {
+            btn.disabled = false;
+            btn.innerHTML = 'Share Your Story &rarr;';
+            alert('Something went wrong. Please try again.');
+          });
+        });
+        </script>
       </div>
     </div>
   </section>
