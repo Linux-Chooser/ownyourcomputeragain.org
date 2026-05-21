@@ -20,6 +20,7 @@ summaryLength = 40
   author = "THG Media"
   mission = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
   goatcounter = "oyca"
+  og_image = "images/og-image.png"
 
 [taxonomies]
   tag = "tags"
