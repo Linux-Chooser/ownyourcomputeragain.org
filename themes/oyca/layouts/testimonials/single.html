@@ -14,8 +14,12 @@
   <section>
     <div class="wrap">
       {{ with site.Data.testimonials }}
+      {{ $all := . }}
+      {{ $limit := 8 }}
+      {{ $total := len $all }}
+      {{ $hasMore := gt $total $limit }}
       <div class="tm-grid">
-        {{ range . }}
+        {{ range first $limit $all }}
         {{ $item := . }}
         <div class="tm-card">
           <div class="tm-quote-mark serif">&ldquo;</div>
@@ -32,6 +36,29 @@
         </div>
         {{ end }}
       </div>
+      {{ if $hasMore }}
+      <div class="tm-show-all">
+        <button class="btn btn-alt tm-show-all-btn" onclick="document.querySelector('.tm-overflow').style.display='grid';this.parentElement.style.display='none';">All Testimonials ({{ $total }}) &darr;</button>
+      </div>
+      <div class="tm-grid tm-overflow" style="display:none;">
+        {{ range after $limit $all }}
+        {{ $item := . }}
+        <div class="tm-card">
+          <div class="tm-quote-mark serif">&ldquo;</div>
+          <p class="tm-quote">{{ .quote }}</p>
+          <div class="tm-attribution">
+            <span class="tm-name serif">{{ .name }}</span>
+            {{ with .context }}<span class="tm-context mono">{{ . }}</span>{{ end }}
+            {{ with .location }}<span class="tm-location mono">{{ . }}</span>{{ end }}
+            {{ with .using_since }}<span class="tm-since mono">Linux since {{ . }}</span>{{ end }}
+          </div>
+          {{ with .source_url }}
+          <a href="{{ . }}" target="_blank" rel="noopener" class="tm-source mono">Source: {{ $item.source_name }}{{ with $item.source_date }}, {{ . }}{{ end }} &rarr;</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
       {{ else }}
       <div class="tm-empty">
         <p class="sec-sub">We just launched, so this page is waiting for its first story. It could be yours.</p>
