@@ -1,0 +1,47 @@
+---
+title: "Disclaimer"
+description: "Important information about using the guides and resources on Own Your Computer Again."
+layout: "single"
+type: "disclaimer"
+category: "legal"
+---
+
+## A quick word before you begin
+
+We built this site to help people discover Linux and learn how to switch. Everything here is written in good faith, based on real experience, and meant to make the process as smooth as possible.
+
+That said, changing your operating system is a real thing. It involves your computer, your files, and your setup. We want to be upfront about what that means.
+
+## Back up your files first
+
+This is the single most important thing we can tell you. Before you install Linux, or any operating system, **copy your important files to an external drive, a cloud service, or both.** Photos, documents, music, anything you can't replace. If something goes wrong during installation, files on your hard drive may be lost.
+
+This isn't unique to Linux. The same is true when installing Windows or macOS. But it matters, and we don't want anyone to learn that lesson the hard way.
+
+## Your computer, your responsibility
+
+We provide guides, recommendations, and resources to help you along the way. But every computer is different, every situation is different, and we can't guarantee a specific outcome on your specific machine.
+
+By following any guide on this site, you acknowledge that:
+
+- **You are making changes to your own computer at your own risk.** We are not responsible for data loss, hardware issues, or any other problems that may result from following our guides.
+- **Not all hardware works perfectly with Linux.** Most does, and it gets better every year, but some devices (WiFi cards, printers, specialty peripherals) may need extra steps or may not be supported.
+- **We are not providing professional IT support.** We point you to great communities and resources, but we can't troubleshoot your specific machine.
+
+## The live environment is your safety net
+
+One of the best things about Linux is that you can try it before you commit. When you boot from a USB drive, nothing on your hard drive changes. You can browse the web, test your hardware, and explore the desktop without installing anything. We strongly encourage everyone to start there.
+
+## Our recommendations are just that
+
+When we recommend a distribution like Linux Mint or a tool like Balena Etcher, it's because we believe they offer the best experience for most people. We have no financial relationship with any project we recommend. We don't run ads, we don't sell data, and nobody pays us to say nice things about their software.
+
+## No warranties
+
+This site and its content are provided **as-is, without warranty of any kind**, express or implied. We make every effort to keep information accurate and up to date, but software changes, hardware varies, and we can't promise that every instruction will work perfectly in every situation.
+
+**Own Your Computer Again** is a project of THG Media. We're a small team of people who love Linux and want to share it with the world. We're not a corporation, and this isn't legal boilerplate designed to confuse you. We just want you to go in with your eyes open.
+
+---
+
+*If you have questions or run into trouble, our [Get Help](/help/) page has links to communities full of people who've been exactly where you are.*
