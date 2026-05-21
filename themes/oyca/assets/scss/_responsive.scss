@@ -58,6 +58,22 @@
   .qa-answer {
     padding: 0 28px 24px;
   }
+
+  .ww-cloud-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ww-app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ww-swap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ww-platform-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 520px) {
@@ -122,5 +138,22 @@
   .qa-close-links {
     flex-direction: column;
     align-items: center;
+  }
+
+  .ww-cloud-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ww-app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ww-swap-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ww-from {
+    min-width: auto;
   }
 }
