@@ -17,6 +17,14 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Internal / project files
+CLAUDE.md
+CONTRIBUTING.md
+README.md
+Project/
+archive/
+start_webserver.sh
+
 # Environment / secrets
 .env
 .env.*
