@@ -1304,3 +1304,79 @@ footer {
 }
 
 // ── End Testimonials page ──────────────────────────────────────────
+
+// ── Thank You page ────────────────────────────────────────────────
+.thank-you-page {
+  padding: 96px 0 0;
+}
+
+.ty-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ty-tux {
+  display: block;
+  width: 100%;
+  margin: 0 auto 48px;
+}
+
+.ty-heading {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: -.02em;
+  margin-top: -96px;
+  margin-bottom: 1.5em;
+
+  em {
+    color: $amber;
+  }
+}
+
+.ty-copy {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: $bone-dim;
+  margin-bottom: 40px;
+}
+
+// ── End Thank You page ────────────────────────────────────────────
+
+// ── 404 page ──────────────────────────────────────────────────────
+.error-page {
+  padding: 96px 0 0;
+}
+
+.error-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error-heading {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: -.02em;
+  margin-bottom: 1.5em;
+
+  em {
+    color: $amber;
+  }
+}
+
+.error-tux {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.error-copy {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: $bone-dim;
+  margin-bottom: 40px;
+}
+
+// ── End 404 page ──────────────────────────────────────────────────
