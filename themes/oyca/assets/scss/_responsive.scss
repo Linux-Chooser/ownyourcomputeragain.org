@@ -74,6 +74,18 @@
   .ww-platform-grid {
     grid-template-columns: 1fr;
   }
+
+  .tm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tm-form-container {
+    padding: 40px 28px;
+  }
+
+  .tm-form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 520px) {
@@ -155,5 +167,13 @@
 
   .ww-from {
     min-width: auto;
+  }
+
+  .tm-form-container {
+    padding: 32px 20px;
+  }
+
+  .tm-form-row {
+    grid-template-columns: 1fr;
   }
 }

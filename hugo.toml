@@ -47,6 +47,11 @@ summaryLength = 40
     weight = 5
 
   [[menu.main]]
+    name = "Real Experiences"
+    url = "/testimonials/"
+    weight = 8
+
+  [[menu.main]]
     name = "Get Help"
     url = "/help/"
     weight = 10

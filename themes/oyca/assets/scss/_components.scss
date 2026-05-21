@@ -1061,3 +1061,180 @@ footer {
 }
 
 // ── End What Works page ────────────────────────────────────────────
+
+// ── Testimonials page ──────────────────────────────────────────────
+.testimonials-page {
+  padding: 96px 0 0;
+}
+
+.tm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.tm-card {
+  border: 1px solid $line;
+  border-radius: 18px;
+  padding: 34px 30px;
+  background: linear-gradient(180deg, $ink-2, $ink);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+  position: relative;
+  transition: border-color .35s, transform .35s, box-shadow .35s;
+
+  &:hover {
+    border-color: rgba($amber, .3);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+  }
+}
+
+.tm-quote-mark {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: $amber;
+  opacity: .4;
+  margin-bottom: -8px;
+}
+
+.tm-quote {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: $bone;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.tm-attribution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+}
+
+.tm-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: $bone;
+}
+
+.tm-context {
+  font-size: .82rem;
+  color: $bone-dim;
+  letter-spacing: .06em;
+}
+
+.tm-location,
+.tm-since {
+  font-size: .82rem;
+  color: $bone-dim;
+  letter-spacing: .06em;
+}
+
+.tm-source {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: .78rem;
+  color: $bone-dim;
+  letter-spacing: .06em;
+  text-decoration: none;
+  border-top: 1px solid $line;
+  padding-top: 14px;
+  width: 100%;
+  transition: color .3s;
+
+  &:hover {
+    color: $amber;
+  }
+}
+
+.tm-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.tm-form-container {
+  max-width: 640px;
+  margin: 0 auto;
+  border: 2px solid rgba($amber, .3);
+  border-radius: 24px;
+  padding: 56px 48px;
+  background: linear-gradient(180deg, $ink-2, $ink);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .06);
+  text-align: center;
+}
+
+.tm-form {
+  text-align: left;
+  margin-top: 36px;
+}
+
+.tm-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.tm-field {
+  margin-bottom: 20px;
+}
+
+.tm-label {
+  display: block;
+  font-size: .82rem;
+  color: $bone-dim;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+}
+
+.tm-optional {
+  color: rgba($bone-dim, .6);
+}
+
+.tm-input,
+.tm-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: $font-body;
+  font-size: 1rem;
+  color: $bone;
+  background: $ink;
+  border: 1px solid $line;
+  border-radius: 12px;
+  transition: border-color .3s, box-shadow .3s;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: rgba($bone-dim, .5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $amber;
+    box-shadow: 0 0 0 3px rgba($amber, .12);
+  }
+}
+
+.tm-input-short {
+  max-width: 160px;
+}
+
+.tm-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.tm-form .btn {
+  margin-top: 8px;
+}
+
+.tm-form-note {
+  margin-top: 16px;
+  font-size: .8rem;
+  color: $bone-dim;
+  letter-spacing: .04em;
+}
+
+// ── End Testimonials page ──────────────────────────────────────────

@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div class="testimonials-page">
+
+  <!-- HERO -->
+  <section class="courage">
+    <div class="wrap">
+      <p class="sec-label mono"><span class="dot"></span> real people, real stories</p>
+      <h1 class="sec-title serif">What people are <em class="amber">saying.</em></h1>
+      <p class="courage-lede">These are real experiences from real people who made the switch. Every quote is sourced and linked to the original article so you can read the full story yourself.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="wrap">
+      {{ with site.Data.testimonials }}
+      <div class="tm-grid">
+        {{ range . }}
+        {{ $item := . }}
+        <div class="tm-card">
+          <div class="tm-quote-mark serif">&ldquo;</div>
+          <p class="tm-quote">{{ .quote }}</p>
+          <div class="tm-attribution">
+            <span class="tm-name serif">{{ .name }}</span>
+            {{ with .context }}<span class="tm-context mono">{{ . }}</span>{{ end }}
+            {{ with .location }}<span class="tm-location mono">{{ . }}</span>{{ end }}
+            {{ with .using_since }}<span class="tm-since mono">Linux since {{ . }}</span>{{ end }}
+          </div>
+          {{ with .source_url }}
+          <a href="{{ . }}" target="_blank" rel="noopener" class="tm-source mono">Source: {{ $item.source_name }}{{ with $item.source_date }}, {{ . }}{{ end }} &rarr;</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="tm-empty">
+        <p class="sec-sub">We just launched, so this page is waiting for its first story. It could be yours.</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- SUBMIT FORM -->
+  <section>
+    <div class="wrap">
+      <div class="tm-form-container">
+        <p class="sec-label mono"><span class="dot"></span> share your experience</p>
+        <h2 class="sec-title serif">Made the switch? <em class="amber">Tell us about it.</em></h2>
+        <p class="sec-sub">Your story could be the one that helps someone else take the leap. All submissions are reviewed by a real person before they appear on this page.</p>
+
+        <form action="https://formspree.io/f/xaqkoqrl" method="POST" class="tm-form">
+          <div class="tm-form-row">
+            <div class="tm-field">
+              <label for="tm-name" class="tm-label mono">Your first name</label>
+              <input type="text" id="tm-name" name="name" placeholder="Jamie" class="tm-input">
+            </div>
+            <div class="tm-field">
+              <label for="tm-location" class="tm-label mono">Where you're from <span class="tm-optional">(optional)</span></label>
+              <input type="text" id="tm-location" name="location" placeholder="Oregon" class="tm-input">
+            </div>
+          </div>
+
+          <div class="tm-field">
+            <label for="tm-since" class="tm-label mono">Using Linux since <span class="tm-optional">(optional)</span></label>
+            <input type="text" id="tm-since" name="using_since" placeholder="2025" class="tm-input tm-input-short">
+          </div>
+
+          <div class="tm-field">
+            <label for="tm-quote" class="tm-label mono">Your experience</label>
+            <textarea id="tm-quote" name="quote" rows="4" placeholder="What made you switch? What surprised you? What would you tell someone who's thinking about it?" class="tm-textarea" required></textarea>
+          </div>
+
+          <div class="tm-field">
+            <label for="tm-email" class="tm-label mono">Email <span class="tm-optional">(optional, never displayed, only if we need to reach you)</span></label>
+            <input type="email" id="tm-email" name="_replyto" placeholder="you@example.com" class="tm-input">
+          </div>
+
+          <input type="hidden" name="_subject" value="OYCA Testimonial Submission">
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn">Share Your Story &rarr;</button>
+          <p class="tm-form-note mono">All submissions are reviewed before publishing. We never share your email.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="welcome-close">
+    <div class="wrap">
+      <h2 class="sec-title serif">Every story matters.</h2>
+      <p class="welcome-close-copy">Every person who shares their experience makes it a little easier for the next person to take the leap. Thank you for being part of this.</p>
+      <div class="qa-close-links">
+        <a href="/get-started/" class="btn">Get Started &rarr;</a>
+        <a href="/what-works/" class="btn btn-alt">What Works on Linux &rarr;</a>
+      </div>
+      <a href="/" class="welcome-home-link mono" style="margin-top: 32px; display: inline-block;">&larr; Back to the homepage</a>
+    </div>
+  </section>
+
+</div>
+{{ end }}
