@@ -37,6 +37,11 @@ summaryLength = 40
     weight = 2
 
   [[menu.main]]
+    name = "Questions"
+    url = "/questions/"
+    weight = 5
+
+  [[menu.main]]
     name = "Get Help"
     url = "/help/"
     weight = 10

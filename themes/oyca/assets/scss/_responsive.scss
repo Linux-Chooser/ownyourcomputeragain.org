@@ -49,6 +49,15 @@
   .note-box {
     padding: 24px 24px;
   }
+
+  .qa-question {
+    font-size: 1.15rem;
+    padding: 24px 28px;
+  }
+
+  .qa-answer {
+    padding: 0 28px 24px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -99,5 +108,19 @@
 
   .path-card {
     padding: 26px 22px;
+  }
+
+  .qa-question {
+    font-size: 1.1rem;
+    padding: 22px 20px;
+  }
+
+  .qa-answer {
+    padding: 0 20px 22px;
+  }
+
+  .qa-close-links {
+    flex-direction: column;
+    align-items: center;
   }
 }

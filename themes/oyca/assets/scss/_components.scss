@@ -738,3 +738,97 @@ footer {
 }
 
 // ── End Help page ───────────────────────────────────────────────────
+
+// ── Questions page ─────────────────────────────────────────────────
+.questions-page {
+  padding: 96px 0 0;
+}
+
+.qa-list {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.qa-item {
+  border: 1px solid $line;
+  border-radius: 18px;
+  background: linear-gradient(180deg, $ink-2, $ink);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: border-color .35s, box-shadow .35s;
+
+  &:hover {
+    border-color: rgba($amber, .4);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+  }
+
+  &[open] {
+    border-color: rgba($amber, .3);
+  }
+}
+
+.qa-question {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -.01em;
+  color: $bone;
+  padding: 28px 34px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::after {
+    content: '+';
+    font-family: $font-mono;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $amber;
+    flex-shrink: 0;
+    transition: transform .3s;
+  }
+
+  [open] > &::after {
+    content: '\2212';
+    transform: rotate(180deg);
+  }
+}
+
+.qa-answer {
+  padding: 0 34px 28px;
+
+  p {
+    color: $bone-dim;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  a {
+    color: $amber-text;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: $amber;
+    }
+  }
+}
+
+.qa-close-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+// ── End Questions page ─────────────────────────────────────────────
