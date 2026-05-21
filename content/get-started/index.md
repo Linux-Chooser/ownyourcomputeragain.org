@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-description: "Try Linux today. Keep all your files. We'll walk you through every step."
+description: "Switch to Linux step by step, no experience needed. Keep your files, try it risk-free, and turn any computer into something fast and free."
 layout: "single"
 type: "get-started"
 ---

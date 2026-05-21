@@ -16,7 +16,7 @@ summaryLength = 40
       unsafe = true
 
 [params]
-  description = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
+  description = "Linux is a free alternative to Windows and macOS. Learn how to switch, breathe new life into an old computer, and never pay for an OS again."
   author = "THG Media"
   mission = "We exist to help people worldwide reclaim ownership of their computers through education, advocacy, and community."
   goatcounter = "oyca"
