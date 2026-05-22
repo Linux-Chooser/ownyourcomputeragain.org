@@ -38,11 +38,15 @@ When this site lists a distribution like Linux Mint or shows a tool like Balena 
 
 ## Manufacturer warranties and support
 
-Installing Linux does not void your computer's hardware warranty. If your laptop screen or hard drive fails, that's a hardware issue, and your warranty covers it regardless of which operating system you're running.
+In the United States, installing Linux typically does not void your hardware warranty under federal consumer protection law. Warranty terms vary by manufacturer and jurisdiction.
 
 That said, most manufacturers only provide technical support for the operating system that came with your machine. If you call Dell or HP with a question and you're running Linux, they may not be able to help you with software-related issues. That's not a penalty, it's just not what their support teams are trained for.
 
 The good news is that the Linux community has some of the most helpful and knowledgeable support communities anywhere. The [Get Help](/help/) page will point you in the right direction.
+
+## Third-party software and links
+
+This site links to third-party software and resources. These projects are independently maintained and their content is outside the control of this site.
 
 ## No warranties
 
@@ -51,3 +55,5 @@ This site and its content are provided **as-is, without warranty of any kind**, 
 ---
 
 *If you have questions or run into trouble, the [Get Help](/help/) page has links to communities full of people who've been exactly where you are.*
+
+All trademarks are the property of their respective owners and are used here for identification purposes only.
