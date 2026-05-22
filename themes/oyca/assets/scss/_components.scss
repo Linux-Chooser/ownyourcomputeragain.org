@@ -279,6 +279,13 @@ footer {
         color: $amber-text;
       }
     }
+
+    .footer-disclaimer-detail {
+      display: block;
+      font-size: .75rem;
+      margin-top: 4px;
+      opacity: .7;
+    }
   }
 }
 
