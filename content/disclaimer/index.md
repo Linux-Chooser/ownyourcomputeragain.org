@@ -36,11 +36,17 @@ One of the best things about Linux is that you can try it before you commit. Whe
 
 When we recommend a distribution like Linux Mint or a tool like Balena Etcher, it's because we believe they offer the best experience for most people. We have no financial relationship with any project we recommend. We don't run ads, we don't sell data, and nobody pays us to say nice things about their software.
 
+## Manufacturer warranties and support
+
+Installing Linux does not void your computer's hardware warranty. If your laptop screen or hard drive fails, that's a hardware issue, and your warranty covers it regardless of which operating system you're running.
+
+That said, most manufacturers only provide technical support for the operating system that came with your machine. If you call Dell or HP with a question and you're running Linux, they may not be able to help you with software-related issues. That's not a penalty, it's just not what their support teams are trained for.
+
+The good news is that the Linux community has some of the most helpful and knowledgeable support communities anywhere. Our [Get Help](/help/) page will point you in the right direction.
+
 ## No warranties
 
 This site and its content are provided **as-is, without warranty of any kind**, express or implied. We make every effort to keep information accurate and up to date, but software changes, hardware varies, and we can't promise that every instruction will work perfectly in every situation.
-
-**Own Your Computer Again** is a project of THG Media. We're a small team of people who love Linux and want to share it with the world. We're not a corporation, and this isn't legal boilerplate designed to confuse you. We just want you to go in with your eyes open.
 
 ---
 
