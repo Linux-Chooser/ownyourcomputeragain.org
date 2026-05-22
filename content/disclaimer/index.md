@@ -20,7 +20,7 @@ This isn't unique to Linux. The same is true when installing Windows or macOS. B
 
 ## Your computer, your responsibility
 
-This site provides guides, information, and resources to help you along the way. But every computer is different, every situation is different, and we can't guarantee a specific outcome on your specific machine.
+This site provides guides, information, and resources to help you along the way. But every computer is different, every situation is different, and a specific outcome on your specific machine cannot be guaranteed.
 
 By following any guide on this site, you acknowledge that:
 
@@ -46,7 +46,7 @@ The good news is that the Linux community has some of the most helpful and knowl
 
 ## No warranties
 
-This site and its content are provided **as-is, without warranty of any kind**, express or implied. We make every effort to keep information accurate and up to date, but software changes, hardware varies, and we can't promise that every instruction will work perfectly in every situation.
+This site and its content are provided **as-is, without warranty of any kind**, express or implied. Every effort is made to keep information accurate and up to date, but software changes, hardware varies, and no promise can be made that every instruction will work perfectly in every situation.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Thank You"
-description: "Thank you for sharing your Linux story with us."
+description: "Thank you for sharing your Linux story."
 type: "thank-you"
 layout: "single"
 sitemap:
