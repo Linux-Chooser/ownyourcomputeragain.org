@@ -280,8 +280,12 @@ footer {
       }
     }
 
+    .btn {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .footer-disclaimer-detail {
-      display: block;
       font-size: .75rem;
       margin-top: 4px;
       opacity: .7;
